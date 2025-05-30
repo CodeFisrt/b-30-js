@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body   onscroll="pageScroll()">
+    <script>
+
+        function pageScroll() {
+            console.log("On Page scrilling")
+        }
+        function onPageResize() {
+            console.log("Page Width Chnaged")
+        }
+        function showAlert() {
+            alert("Welcome b-30 Batch")
+        }
+
+        function showMessage(message) {
+            debugger;
+            alert(message)
+        }
+
+        function onCityChange() {
+            alert('City Changed')
+        }
+
+        function onTextChnage() {
+            console.log("On Text Chnages")
+        }
+
+        function onMouseIn() {
+            console.log("MOuse Entereed Div")
+        }
+        function onMouseLeft( ){
+            console.log("Mouse Left Div")
+        }
+
+
+    </script>
+
+    <div class="row">
+        <div class="col-3">
+            <button onclick="showAlert()" class="btn btn-success">Show Alert</button>
+        </div>
+        <div class="col-3">
+            <label onclick="showAlert()"> Show Alert</label>
+        </div>
+        <div class="col-3" onclick="showAlert()">
+            div 3
+        </div>
+    </div>
+    <div class="row pt-3">
+        <div class="col-3">
+            <button class="btn btn-primary" onclick="showMessage('Angular')">Angular</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-success" onclick="showMessage('React js')">ReactJs</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-warning" onclick="showMessage('Java')">Java</button>
+        </div>
+        <div class="col-3">
+            <button class="btn btn-warning" onclick="showMessage()">Dot net</button>
+        </div>
+    </div>
+    <div class="row pt-4">
+        <div class="col-3">
+            <select class="form-select" onchange="onCityChange()">
+                <option>Pune</option>
+                <option >Nagpur</option>
+                <option>Jaipur</option>
+            </select>
+        </div>
+        <div class="col-3">
+            <input type="text" oninput="onTextChnage()"  name="" id="">
+        </div>
+          <div class="col-3">
+            <input type="checkbox" onchange="onTextChnage()"  name="" id="">
+        </div>
+    </div>
+    <div class="row">
+        <div onmousemove="onmousMove()" onmouseenter="onMouseIn()" onmouseleave="onMouseLeft()" class="col-4 pt-4 bg-primary pb-4">
+            div
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4">
+            <button class="btn btn-danger"> Show Course Name</button>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('scroll',onPageScorliling)
+         
+        function onPageScorliling() {
+            console.log("Mouse is Moving")
+        }
+        function showCourseName() {
+            alert("Angular + Dot net")
+        }
+    </script>
+
+</body>
+
+</html>

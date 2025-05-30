@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //showWelcomeMsg();
+        const num1 = 12;
+        const num2 = 12;
+
+        function showWelcomeMsg() {
+            alert("Welcome b-30")
+        }
+
+        function getSum() {
+            var result = num1 + num2;
+            alert("Add " + result)
+        }
+
+        // getSum();
+
+
+        function getAdditionOfTwoNum(num1 = 0, num2 = 0) {
+            debugger;
+
+            var result = num1 + num2;
+            alert('Result ' + result)
+        }
+        //getAdditionOfTwoNum(3, 5,34)
+        //getAdditionOfTwoNum(3, 5)
+        // getAdditionOfTwoNum(44, 66)
+        // getAdditionOfTwoNum(55);
+        //()
+
+        function getAddition(num1, num2) {
+            var isNum =  num1 instanceof Number;
+            var isnum2 = num2 instanceof Number;
+
+            const result = num1 + num2;
+            return result;
+        }
+
+        function getAddition(num1, num2, num3) {
+            const result = num1 + num2 + num3;
+            return result;
+        }
+
+         function getAddition(num1, num2, num3,num4) {
+            const result = num1 + num2 + num3 + num4;
+            return result;
+        }
+
+        function getSumNum() {
+            debugger;
+            const result = num1 + num2;
+            var fullName = "Chetan Jogi"
+            console.log(fullName)
+            return result;
+        }
+
+        //console.log(fullName)
+
+        var resul3 = getSumNum()
+
+        var isNum  = resul3 instanceof Number;
+
+        var result1 = getAddition(5, 7)
+        console.log(result1)
+
+        console.log(getAddition(3, 4))
+
+    </script>
+</body>
+
+</html>
